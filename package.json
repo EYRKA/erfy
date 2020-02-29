@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "dev": "docz dev",
-    "build": "docz build"
+    "build": "docz build",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
@@ -24,6 +25,7 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "gatsby-plugin-sass": "^2.1.29",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
