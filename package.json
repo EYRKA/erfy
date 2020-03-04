@@ -1,18 +1,11 @@
 {
   "private": true,
   "name": "hikafy",
-  "version": "2.0.0-rc.41",
-  "license": "MIT",
-  "files": [
-    "src/",
-    "doczrc.js",
-    "tsconfig.json",
-    "package.json"
-  ],
+  "version": "0.1.0",
+  "license": "none",
   "scripts": {
     "dev": "docz dev",
-    "build": "docz build",
-    "deploy": "gh-pages -d docs"
+    "build": "docz build"
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
@@ -25,7 +18,24 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "gatsby-plugin-sass": "^2.1.29",
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.2",
+    "stylelint": "^13.2.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": "stylelint"
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-selector-bem-pattern"
+    ]
   }
 }
