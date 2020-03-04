@@ -23,6 +23,7 @@
     "node-sass": "^4.13.1",
     "sass": "^1.26.2",
     "stylelint": "^13.2.0",
+    "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-selector-bem-pattern": "^2.1.0"
   },
   "husky": {
@@ -32,10 +33,5 @@
   },
   "lint-staged": {
     "*.scss": "stylelint"
-  },
-  "stylelint": {
-    "plugins": [
-      "stylelint-selector-bem-pattern"
-    ]
   }
 }
