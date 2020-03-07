@@ -1,0 +1,9 @@
+import React, { FC } from "react";
+
+import "./Card.scss";
+
+const Card: FC = ({ children }) => {
+  return <div className="card">{children}</div>;
+};
+
+export { Card };
