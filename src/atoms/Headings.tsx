@@ -1,29 +1,44 @@
-import React, { FC } from "react";
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 
-import "./headings.scss";
+import React from 'react';
+import './headings.scss';
 
-const Heading1: FC = ({ children }) => {
-  return <h1 className="heading-1">{children}</h1>;
+type Tag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type ComponentProps = {
+  id: string;
+  children: React.ReactChild;
 };
 
-const Heading2: FC = ({ children }) => {
-  return <h2 className="heading-1">{children}</h2>;
+const heading = (Tag: Tag) => {
+  const Component = (props: ComponentProps) => {
+    return !!props.id ? (
+      <Tag {...props}>
+        <a
+          href={`#${props.id}`}
+          sx={{
+            color: 'inherit',
+            textDecoration: 'none',
+            ':hover': {
+              textDecoration: 'underline'
+            }
+          }}
+        >
+          {props.children}
+        </a>
+      </Tag>
+    ) : (
+      <Tag {...props} />
+    );
+  };
+
+  Component.displayName = Tag;
+  return Component;
 };
 
-const Heading3: FC = ({ children }) => {
-  return <h3 className="heading-1">{children}</h3>;
-};
-
-const Heading4: FC = ({ children }) => {
-  return <h4 className="heading-1">{children}</h4>;
-};
-
-const Heading5: FC = ({ children }) => {
-  return <h5 className="heading-1">{children}</h5>;
-};
-
-const Heading6: FC = ({ children }) => {
-  return <h6 className="heading-1">{children}</h6>;
-};
-
-export { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 };
+export const h1 = heading('h1');
+export const h2 = heading('h2');
+export const h3 = heading('h3');
+export const h4 = heading('h4');
+export const h5 = heading('h5');
+export const h6 = heading('h6');
