@@ -10,7 +10,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
-    "docz": "2.2.0",
+    "docz": "^2.3.0-alpha.13",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
