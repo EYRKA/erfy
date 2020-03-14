@@ -1,4 +1,4 @@
-# Hikafy
+# erfy | ui component
 
 ![Deploy Website](https://github.com/EYRKA/erfy/workflows/Deploy%20Website/badge.svg)
 
