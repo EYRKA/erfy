@@ -28,4 +28,4 @@ jobs:
         run: yarn build
 
       - name: Install surge & fire deployment
-        run: npx surge ./docs --domain hikafy.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: npx surge ./docs --domain erfy.surge.sh --token ${{ secrets.SURGE_TOKEN }}
