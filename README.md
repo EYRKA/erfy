@@ -1,5 +1,7 @@
 # Hikafy
 
+![Deploy Website](https://github.com/EYRKA/erfy/workflows/Deploy%20Website/badge.svg)
+
 ## Vision
 
 - [Atomic Design](https://danilowoz.com/Atomic-Design-with-React/)
