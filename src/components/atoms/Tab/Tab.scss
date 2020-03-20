@@ -9,14 +9,13 @@
   height: 40px;
   line-height: 40px;
   padding: 0 24px;
-
   background-color: transparent;
   color: #555;
   border-top-color: transparent;
 
   &.--active {
     border-top-color: #131313;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     color: #131313;
   }
 }
@@ -31,7 +30,7 @@
     min-height: 40px;
     position: relative;
     z-index: 6;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     width: calc(100% - 32px);
   }
 }

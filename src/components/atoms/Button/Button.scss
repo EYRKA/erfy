@@ -1,4 +1,4 @@
-@import "../common/variables.scss";
+@import '../common/variables.scss';
 
 .button {
   border: 0;
@@ -14,6 +14,7 @@
 }
 
 /* Size */
+
 .small {
   padding: 0.5em 0.6em;
 }
@@ -27,6 +28,7 @@
 }
 
 /* Theme */
+
 .default {
   color: #fff;
   background: var(--brand);
@@ -46,6 +48,7 @@
 }
 
 /* Disabled */
+
 .disabled {
   color: var(--grey-2);
   background: color(var(--grey-4) tint(40%));
