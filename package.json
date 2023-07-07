@@ -28,7 +28,7 @@
     "lint-staged": "^10.0.8",
     "node-sass": "^4.13.1",
     "sass": "^1.26.2",
-    "stylelint": "^13.2.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-selector-bem-pattern": "^2.1.0"
